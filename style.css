@@ -47,6 +47,10 @@ h6 {
   margin: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 strong {
   color: var(--color-primary);
 }
@@ -54,38 +58,50 @@ strong {
 .max-width-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding-left: var(--spacing-3);
-  padding-right: var(--spacing-3);
+  padding: 0 var(--spacing-3);
 }
 
 header {
-  padding: var(--spacing-7) 0;
+  border-bottom: var(--spacing-1) solid var(--color-gray-3);
 }
 
 .intro-chunk {
-  max-width: 320px;
+  padding: var(--spacing-7) 0;
+  max-width: 400px;
 }
 
-.title {
+.intro-chunk p {
+  font-size: var(--font-md);
+}
+
+.intro-chunk .title {
   font-size: var(--font-xl);
 }
 
 main {
   padding: var(--spacing-7) 0;
   background-color: var(--color-gray-2);
-  border-top: var(--spacing-1) solid var(--color-gray-3);
 }
 
 .card {
   background-color: var(--color-gray-1);
   margin: 0 -24px;
-  padding: var(--spacing-1) var(--spacing-3) var(--spacing-1);
+  padding: var(--spacing-3);
   border-bottom: var(--spacing-1) solid var(--color-gray-3);
+}
+
+.card p {
+  font-size: var(--font-md);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
 }
 
 .indented-heading {
   width: fit-content;
   font-size: var(--font-lg);
+  margin-top: -16px;
   margin-left: -32px;
   padding: var(--spacing-2) var(--spacing-4);
   background-color: var(--color-secondary-light);
