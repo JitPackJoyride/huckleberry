@@ -11,5 +11,8 @@
   },
   "engines": {
     "npm": ">5"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
